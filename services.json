@@ -1,0 +1,32 @@
+{
+  "PKR": {
+    "instagram": { "followers": 1200, "likes": 250, "views": 150, "comments": 1500 },
+    "facebook": { "followers": 550, "postlikes": 300, "followerslikes": 850, "reactions": 350, "views": 150, "comments": 5500 },
+    "youtube": { "subscribers": 4500, "likes": 200, "views": 350, "comments": 2000 },
+    "tiktok": { "followers": 650, "likes": 150, "views": 70, "comments": 1500 }
+  },
+  "INR": {
+    "instagram": { "followers": 350, "likes": 60, "views": 20, "comments": 500 },
+    "facebook": { "followers": 250, "postlikes": 120, "followerslikes": 550, "reactions": 150, "views": 80, "comments": 1800 },
+    "youtube": { "subscribers": 1200, "likes": 100, "views": 80, "comments": 600 },
+    "tiktok": { "followers": 320, "likes": 70, "views": 20, "comments": 500 }
+  },
+  "USD": {
+    "instagram": { "followers": 8, "likes": 5, "views": 2, "comments": 25 },
+    "facebook": { "followers": 6, "postlikes": 4, "followerslikes": 10, "reactions": 5, "views": 2, "comments": 30 },
+    "youtube": { "subscribers": 35, "likes": 10, "views": 4, "comments": 40 },
+    "tiktok": { "followers": 7, "likes": 4, "views": 2, "comments": 20 }
+  },
+  "EUR": {
+    "instagram": { "followers": 7, "likes": 4, "views": 2, "comments": 20 },
+    "facebook": { "followers": 5, "postlikes": 3, "followerslikes": 8, "reactions": 4, "views": 1.5, "comments": 25 },
+    "youtube": { "subscribers": 30, "likes": 8, "views": 3, "comments": 34 },
+    "tiktok": { "followers": 6, "likes": 3.5, "views": 2, "comments": 17 }
+  },
+  "GBP": {
+    "instagram": { "followers": 6.5, "likes": 3.5, "views": 1.5, "comments": 18 },
+    "facebook": { "followers": 4.5, "postlikes": 2.5, "followerslikes": 7, "reactions": 3.5, "views": 1.5, "comments": 22 },
+    "youtube": { "subscribers": 28, "likes": 7, "views": 2.5, "comments": 30 },
+    "tiktok": { "followers": 5.5, "likes": 3, "views": 1.5, "comments": 15 }
+  }
+}

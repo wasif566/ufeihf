@@ -1,0 +1,23 @@
+{
+  "comments": [
+    { "minQty": 50, "percent": 0 },
+    { "minQty": 100, "percent": 0 },
+    { "minQty": 200, "percent": 0 },
+    { "minQty": 300, "percent": 0 },
+    { "minQty": 500, "percent": 0 },
+    { "minQty": 1000, "percent": 5 },
+    { "minQty": 1500, "percent": 10 },
+    { "minQty": 2000, "percent": 15 }
+  ],
+"other": [
+  { "minQty": 200, "percent": 0 },
+  { "minQty": 500, "percent": 0 },
+  { "minQty": 1000, "percent": 0 },
+  { "minQty": 2000, "percent": 5 },
+  { "minQty": 5000, "percent": 10 },
+  { "minQty": 10000, "percent": 15 },
+  { "minQty": 25000, "percent": 20 },
+  { "minQty": 50000, "percent": 25 }
+]
+
+}

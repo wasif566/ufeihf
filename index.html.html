@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Marketing Services</title>
+
+    // <!-- Meta Pixel Code - put this inside your <head> -->
+<script>
+  !(function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)})(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  // Initialize one or more pixels:
+  fbq('init', 'YOUR_PIXEL_ID');      // <-- primary pixel
+  // fbq('init', 'ANOTHER_PIXEL_ID'); // <-- optional additional pixel(s)
+  fbq('track', 'PageView');          // default PageView event
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+</noscript>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+    background: linear-gradient(135deg, #2b1055 0%, #7597de 100%);
+
+            min-height: 100vh;
+        }
+
+        /* Header Styles */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #667eea;
+        }
+
+        /* Currency Converter */
+        .currency-widget {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 25px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+        }
+
+        .detected-currency {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .country-flag {
+            width: 20px;
+            height: 15px;
+            border-radius: 2px;
+        }
+
+        .currency-select {
+            padding: 0.3rem 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+            font-size: 0.9rem;
+        }
+
+        .currency-tooltip {
+            position: relative;
+            cursor: help;
+            margin-left: 0.5rem;
+        }
+
+        .currency-tooltip:hover::after {
+            content: "This converts display prices only. The base price used for your order is determined from your country (via IP).";
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: #333;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            width: 250px;
+            z-index: 1001;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-top: 100px;
+            padding: 2rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Platform Cards */
+        .platform-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .platform-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .platform-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .platform-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--platform-color);
+        }
+
+       .platform-header {
+    display: flex;
+    align-items: center;      /* vertical center */
+    justify-content: center;  /* horizontal center */
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.platform-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.platform-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+        .platform-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .form-group select,
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group select:focus,
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .url-note {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        .buy-now-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .buy-now-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .buy-now-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Platform Colors */
+        .instagram { --platform-color: #E4405F; }
+        .facebook { --platform-color: #1877F2; }
+        .youtube { --platform-color: #FF0000; }
+        .tiktok { --platform-color: #000000; }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: slideIn 0.3s ease;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 3rem;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .modal-header {
+            text-align: center;
+            margin-bottom: 0.2rem;
+        }
+
+        .modal-header h2 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .order-summary {
+            background: #f8f9fa;
+            padding: 0.5rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .order-summary h3 {
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e1e5e9;
+        }
+
+        .order-item:last-child {
+            border-bottom: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .payment-section {
+            margin-bottom: 1rem;
+        }
+
+        .payment-method {
+          
+            background: #f8f9fa;
+            padding: 0.2rem;
+            border-radius: 10px;
+            margin-bottom: 0.5rem;
+        }
+
+        .payment-method h4 {
+            margin-bottom: 0.3rem;
+            color: #333;
+        }
+
+
+        .payment-text{
+            margin-top: 2rem;
+        }
+        .copyable-field {
+            display: flex;
+            align-items: center;
+             overflow: hidden;       
+            gap: 0.5rem;
+          
+        }
+
+        .copyable-field input {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fff;
+        }
+
+        .copy-btn {
+  
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background: #5a67d8;
+        }
+
+       .whatsapp-btn {
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-decoration: none;   /* remove underline */
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebc57; /* hover shade */
+}
+
+
+        .file-upload {
+   
+            margin-bottom: 0.5rem;
+        }
+
+        .file-upload input[type="file"] {
+            width: 100%;
+            cursor: pointer;
+            padding: 0.75rem;
+            border: 2px dashed #ddd;
+            border-radius: 8px;
+        }
+
+        .comments-textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            min-height: 100px;
+            resize: vertical;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: start;
+        }
+
+        .btn-cancel {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .btn-submit {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+     
+
+
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #c3e6cb;
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #f5c6cb;
+        }
+
+        .toast {
+            position: fixed;
+            top: 120px;
+            right: 2rem;
+            background: #28a745;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            z-index: 3000;
+            animation: slideInRight 0.3s ease;
+        }
+
+        .acount-title{
+              margin-bottom: 1rem;
+          
+         text-align: left;
+        }
+
+        
+
+        .bold-text{
+            font-weight: bold;
+      
+            font-size: 1.1rem;
+            color: #333;
+        }
+.acount-title,
+.copyable-field {
+    display: flex;
+    align-items: center;  /* vertically align */
+    justify-content: center; /* center horizontally */
+    gap: 0.5rem; /* spacing between label and text */
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.footer {
+background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
+
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-logo .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 6px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.footer-social .social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+
+.social-icons * {
+    border-radius: 10px;
+    color: inherit !important;           /* reset children color */
+    background: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+}
+
+
+.footer-social .social-icons img {
+    width: 45px;
+    height: 45px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+}
+
+.footer-social .social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+
+
+.whatsapp-float {
+    position: fixed;
+    top: 70%;
+    right: 10px;
+    z-index: 9999;
+    background: #25d366;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background: #1ebe5a;
+}
+
+
+   /* Loader full-screen wrapper */
+    .loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+background: linear-gradient(135deg, #2b1055 0%, #7597de 100%);
+
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .loader {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+      border: 3px solid;
+      border-color: #FFF #FFF transparent transparent;
+      box-sizing: border-box;
+      animation: rotation 1s linear infinite;
+    }
+    .loader::after,
+    .loader::before {
+      content: '';  
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border: 3px solid;
+      border-color: transparent transparent #FF3D00 #FF3D00;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      animation: rotationBack 0.5s linear infinite;
+      transform-origin: center center;
+    }
+    .loader::before {
+      width: 32px;
+      height: 32px;
+      border-color: #Ffffff #ffffff transparent transparent;
+      animation: rotation 1.5s linear infinite;
+    }
+        
+    @keyframes rotation {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    } 
+    @keyframes rotationBack {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-360deg); }
+    }
+
+    /* Hide loader when inactive */
+    .hidden {
+      display: none;
+    }
+  
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: scale(0.9) translateY(-20px); opacity: 0; }
+            to { transform: scale(1) translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+
+
+
+
+        .floating-img {
+   
+  margin-top: 8rem;
+    margin-left: 12rem;
+
+    animation: floatUpDown 4s ease-in-out infinite;
+}
+
+.floating-img img {
+    width: 400px;  /* image ka size adjust karo */
+    height: auto;
+   
+}
+
+
+#imagePreview img {
+    width: 50px;
+    height: auto;
+    border-radius: 8px;
+    
+  
+}
+
+
+/* Up-Down Animation */
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            
+
+            
+
+        .copyable-field {
+         gap: 0.3rem;
+         padding: 0.2rem;
+        }
+
+         .copy-btn {
+            font-size: 12px;
+            padding: 0.4rem 0.3rem;
+         }
+
+
+            .header {
+                top:-20px;
+            
+        height: 7rem;
+                flex-direction: column;
+              
+            }
+
+            .nav {
+                gap: 1rem;
+            }
+
+            .currency-widget {
+         
+                padding: 0.3rem 0.8rem;
+            }
+            .logo{
+                position: relative;
+            }
+
+             .floating-img {
+display: none;
+  }
+     
+            .main-content {
+                margin-top:5rem;
+                padding: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .platform-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .modal {
+                width: 95%;
+                padding: 1rem;
+            }
+
+            .modal-actions {
+                padding: 4px 8px;
+                flex-direction: row;
+            }
+
+
+             .btn-cancel {
+                padding: 0.6rem 0.8rem;
+                font-size: 1rem;
+             }
+                
+            .Email{
+                font-size: 14px;
+            }
+        }
+
+
+        .footer-social .social-icons img {
+    width: 30px;
+    height: 30px;
+   
+}
+
+
+
+ @media (max-width: 360px) {
+.Email{
+    font-size: 12px;
+}
+ }
+            
+
+    </style>
+</head>
+<body>
+
+
+<!--  
+  <div class="loader-wrapper">
+    <span class="loader"></span>
+  </div> -->
+
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Social Expert</a>
+
+            <div class="currency-widget">
+                <div class="detected-currency">
+                    <img id="countryFlag" src="" alt="" class="country-flag">
+                    <span id="detectedCurrency">USD</span>
+                </div>
+                <select id="currencySelect" class="currency-select">
+                    <option value="PKR">PKR (₨)</option>
+                    <option value="INR">INR (₹)</option>
+                    <option value="USD">USD ($)</option>
+                    <option value="EUR">EUR (€)</option>
+                    <option value="GBP">GBP (£)</option>
+                </select>
+                <!-- <span class="currency-tooltip">ℹ️</span> -->
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- WhatsApp Floating Button -->
+<a href="javascript:void(0)" id="whatsappBtn" class="whatsapp-float">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="hero">
+            <h1>Social Media Marketing Services</h1>
+            <p>Boost your social media presence with our premium services</p>
+        </div>
+
+        <!-- Platform Cards -->
+        <div class="platform-cards" id="platformCards">
+            <!-- Instagram Card -->
+            <div class="platform-card instagram">
+                <div class="platform-header">
+                    <svg class="platform-logo" viewBox="0 0 24 24" fill="#E4405F">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    <h3 class="platform-name">Instagram</h3>
+                </div>
+               
+                
+                <div class="form-group">
+                    <label for="instagramService">Service Type</label>
+                    <select id="instagramService" onchange="updateQuantityOptions('instagram')">
+                        <option value="followers">Followers</option>
+                        <option value="likes">Likes</option>
+                        <option value="views">Views</option>
+                        <option value="comments">Comments</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="instagramQuantity">Quantity & Price</label>
+                    <select id="instagramQuantity"></select>
+                </div>
+
+                <div class="form-group">
+                    <label for="instagramUrl">Profile/Post Link</label>
+                    <input type="url" id="instagramUrl" placeholder="https://instagram.com/your-profile">
+                    <p class="url-note">Make sure the Account is public & accessible</p>
+                </div>
+
+                <button class="buy-now-btn" onclick="openModal('instagram')">Buy Now</button>
+            </div>
+
+            <!-- Facebook Card -->
+            <div class="platform-card facebook">
+                <div class="platform-header">
+                    <svg class="platform-logo" viewBox="0 0 24 24" fill="#1877F2">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    <h3 class="platform-name">Facebook</h3>
+                </div>
+               
+                
+                <div class="form-group">
+                    <label for="facebookService">Service Type</label>
+                    <select id="facebookService" onchange="updateQuantityOptions('facebook')">
+                        <option value="followers">Followers (page/profile)</option>
+                        <option value="postlikes">Post Likes</option>
+                        <option value="followerslikes">Followers + Likes</option>
+                        <option value="reactions">Reactions</option>
+                        <option value="views">Views</option>
+                        <option value="comments">Comments</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="facebookQuantity">Quantity & Price</label>
+                    <select id="facebookQuantity"></select>
+                </div>
+
+                <div class="form-group">
+                    <label for="facebookUrl">Page/Post Link</label>
+                    <input type="url" id="facebookUrl" placeholder="https://facebook.com/your-page">
+                    <p class="url-note">Make sure the Page/profile is public & accessible</p>
+                </div>
+
+                <button class="buy-now-btn" onclick="openModal('facebook')">Buy Now</button>
+            </div>
+
+            <!-- YouTube Card -->
+            <div class="platform-card youtube">
+                <div class="platform-header">
+                    <svg class="platform-logo" viewBox="0 0 24 24" fill="#FF0000">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    <h3 class="platform-name">YouTube</h3>
+                </div>
+              
+                
+                <div class="form-group">
+                    <label for="youtubeService">Service Type</label>
+                    <select id="youtubeService" onchange="updateQuantityOptions('youtube')">
+                        <option value="subscribers">Subscribers</option>
+                        <option value="likes">Likes</option>
+                        <option value="views">Views</option>
+                        <option value="comments">Comments</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="youtubeQuantity">Quantity & Price</label>
+                    <select id="youtubeQuantity"></select>
+                </div>
+
+                <div class="form-group">
+                    <label for="youtubeUrl">Channel/Video Link</label>
+                    <input type="url" id="youtubeUrl" placeholder="https://youtube.com/channel/your-channel">
+                    <p class="url-note">Make sure the Channel is public & accessible</p>
+                </div>
+
+                <button class="buy-now-btn" onclick="openModal('youtube')">Buy Now</button>
+            </div>
+
+            <!-- TikTok Card -->
+            <div class="platform-card tiktok">
+                <div class="platform-header">
+                    <svg class="platform-logo" viewBox="0 0 24 24" fill="#000000">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                    </svg>
+                    <h3 class="platform-name">TikTok</h3>
+                </div>
+               
+                
+                <div class="form-group">
+                    <label for="tiktokService">Service Type</label>
+                    <select id="tiktokService" onchange="updateQuantityOptions('tiktok')">
+                        <option value="followers">Followers</option>
+                        <option value="likes">Likes</option>
+                        <option value="views">Views</option>
+                        <option value="comments">Comments</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tiktokQuantity">Quantity & Price</label>
+                    <select id="tiktokQuantity"></select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tiktokUrl">Profile/Video Link</label>
+                    <input type="url" id="tiktokUrl" placeholder="https://tiktok.com/@your-username">
+                    <p class="url-note">Make sure the Account is public & accessible</p>
+                </div>
+
+                <button class="buy-now-btn" onclick="openModal('tiktok')">Buy Now</button>
+ </div>
+
+    <div class="floating-img">
+  <img src="media-banner.png" alt="Floating Ad">
+</div>
+
+    </div>
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <h2>Order Summary</h2>
+                <p>Please review your order details and proceed with payment</p>
+            </div>
+
+            <div class="order-summary" id="orderSummary">
+                <!-- Order details will be populated here -->
+            </div>
+
+            <div class="payment-section" id="paymentSection">
+                <!-- Payment methods will be populated here -->
+            </div>
+
+<div class="file-upload">
+  <label for="paymentScreenshot"><strong>Upload Payment Screenshot</strong></label>
+   <!-- onchange="previewImage(event)" for add after accept="image/* -->
+  <input type="file" id="paymentScreenshot" accept="image/*">
+  
+  <!-- Preview box -->
+  <div id="imagePreview" style="margin-top:10px;">
+    <img id="preview" src="" alt="No file chosen" style="max-width: 100%; display: none; border: 1px solid #ddd; border-radius: 6px; padding: 5px;">
+  </div>
+</div>
+
+            <div class="form-group">
+                <label for="additionalComments"><strong>Additional Comments (Optional)</strong></label>
+                <textarea id="additionalComments" class="comments-textarea" placeholder="Any special instructions or comments..."></textarea>
+            </div>
+
+            <div id="modalMessages"></div>
+
+            <div class="modal-actions">
+                <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+                <button class="btn-submit" onclick="submitOrder()">Submit Order</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <a href="#" class="logo">Social Media Services</a>
+            <p>Boost your online presence with our trusted Social Media Expert services.</p>
+        </div>
+
+        <!-- <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div> -->
+
+      <div class="footer-social">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/social_expert_no1?igsh=MTZldnpmazdzNHVjaA==" target="_blank">
+            <img src="download (1) - Copy.jpeg" alt="Instagram">
+        </a>
+        <a href="#" target="_blank">
+            <img src="download (4).png" alt="Facebook">
+        </a>
+        <a href="https://wa.me/923266438812?text=Hello%2C%20I%20would%20like%20to%20discuss%20a%20custom%20order%20for%20social%20media%20services.%20Please%20guide%20me." target="_blank">
+            <img src="WhatsApp.svg" alt="Whatsapp">
+        </a>
+        <a href="#" target="_blank">
+            <img src="download.png" alt="LinkedIn">
+        </a>
+    </div>
+</div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2025 Social Media Expert. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    <script>
+     // Global variables
+let detectedCountry = 'US';
+let baseCurrency = 'USD';
+let displayCurrency = 'USD';
+let exchangeRates = {};
+let basePrices = {};
+let discountRules = {};
+
+// Currency symbols
+const currencySymbols = {
+    USD: '$',
+    EUR: '€',
+    PKR: '₨',
+    INR: '₹',
+    GBP: '£'
+};
+
+// Country flags
+const countryFlags = {
+    US: 'download (4) - Copy.png',
+    PK: 'download (3).png',
+    IN: 'download (2).png',
+    EU: 'download (1).png',
+    GB: 'download (5).png'
+};
+
+// Initialize the application
+async function init() {
+    await loadJSONData();
+    await detectLocation();
+    updateCurrencyDisplay();
+    initializeQuantityOptions();
+    setupEventListeners();
+}
+
+// Load JSON files
+async function loadJSONData() {
+    try {
+        exchangeRates = await (await fetch('currencies.json?t=' + new Date().getTime())).json();
+        basePrices = await (await fetch('services.json?t=' + new Date().getTime())).json();
+        discountRules = await (await fetch('discounts.json?t=' + new Date().getTime())).json();
+        console.log('JSON data loaded successfully');
+    } catch (err) {
+        console.error('Error loading JSON files:', err);
+        // Fallback hardcoded values
+        exchangeRates = {
+            USD: 1, EUR: 0.86, PKR: 285, INR: 88.15, GBP: 0.75
+        };
+        basePrices = {}; // Keep empty to avoid crashes
+        discountRules = { comments: [], other: [] };
+    }
+}
+
+// Detect user location via IP
+async function detectLocation() {
+    try {
+        let data = null;
+        try {
+            const controller = new AbortController();
+            const timeout = setTimeout(() => controller.abort(), 3000);
+            const response = await fetch('https://ipwhois.app/json/', {
+                signal: controller.signal
+            });
+            clearTimeout(timeout);
+
+            if (response.ok) {
+                data = await response.json();
+                if (data && data.country_code) {
+                    detectedCountry = data.country_code;
+                }
+            }
+        } catch (e) {
+            console.log('Primary IP service failed, using default location');
+            detectedCountry = 'US';
+        }
+
+        switch (detectedCountry) {
+            case 'PK': baseCurrency = 'PKR'; break;
+            case 'IN': case 'BD': case 'LK': case 'NP': case 'AF': case 'JP':
+            case 'KR': case 'ID': case 'VN': case 'MM': case 'KH': case 'LA':
+            case 'IR': case 'IQ': baseCurrency = 'INR'; break;
+            case 'AT': case 'BE': case 'HR': case 'CY': case 'EE': case 'FI': case 'FR': case 'DE':
+            case 'GR': case 'IE': case 'IT': case 'LV': case 'LT': case 'LU': case 'MT': case 'NL':
+            case 'PT': case 'SK': case 'SI': case 'ES': case 'XK': case 'ME': case 'AD': case 'MC':
+            case 'SM': case 'VA': baseCurrency = 'EUR'; detectedCountry = 'EU'; break;
+            case 'GB': case 'UK': case 'IM': case 'JE': case 'GG': case 'GI': case 'FK': case 'SH': case 'GS':
+                baseCurrency = 'GBP'; break;
+                // vpn or unknown
+            default: baseCurrency = 'INR'; detectedCountry = 'IN';
+        }
+
+        displayCurrency = baseCurrency;
+    } catch (err) {
+        console.log('Location detection fallback triggered');
+        detectedCountry = 'US';
+        baseCurrency = 'USD';
+        displayCurrency = 'USD';
+    }
+
+    await fetchExchangeRates();
+}
+
+
+
+async function fetchExchangeRates() {
+    try {
+        // Fetch local JSON file
+        const response = await fetch('currencies.json?t=' + new Date().getTime()); // prevent caching
+        if (response.ok) {
+            const data = await response.json();
+            exchangeRates = {
+                USD: data.USD || 1,
+                EUR: data.EUR || 0.86,
+                PKR: data.PKR || 285,
+                INR: data.INR || 88.15,
+                GBP: data.GBP || 0.75
+            };
+            console.log('Exchange rates loaded from JSON:', exchangeRates);
+        } else {
+            console.log('Failed to fetch local JSON, using fallback');
+            setFallbackRates();
+        }
+    } catch (error) {
+        console.log('Error fetching local JSON, using fallback:', error);
+        setFallbackRates();
+    }
+}
+
+function setFallbackRates() {
+    exchangeRates = {
+        USD: 1,
+        EUR: 0.86,
+        PKR: 285,
+        INR: 88.15,
+        GBP: 0.75
+    };
+}
+
+// Call the function
+fetchExchangeRates();
+
+
+// Update currency display
+function updateCurrencyDisplay() {
+    const flagElement = document.getElementById('countryFlag');
+    const currencyElement = document.getElementById('detectedCurrency');
+    const selectElement = document.getElementById('currencySelect');
+
+    flagElement.src = countryFlags[detectedCountry] || countryFlags['US'];
+    currencyElement.textContent = `${baseCurrency} (${currencySymbols[baseCurrency]})`;
+    selectElement.value = displayCurrency;
+}
+
+// Convert price between currencies
+function convertPrice(amount, fromCurrency, toCurrency) {
+    if (fromCurrency === toCurrency) return amount;
+    const usdAmount = amount / exchangeRates[fromCurrency];
+    const convertedAmount = usdAmount * exchangeRates[toCurrency];
+    return Math.round(convertedAmount * 100) / 100;
+}
+
+// Format price
+function formatPrice(amount, currency) {
+    const symbol = currencySymbols[currency];
+    return `${symbol}${amount.toLocaleString()}`;
+}
+
+// Initialize quantity options for all platforms
+function initializeQuantityOptions() {
+    const platforms = ['instagram', 'facebook', 'youtube', 'tiktok'];
+    platforms.forEach(platform => updateQuantityOptions(platform));
+}
+
+// Get discount percentage based on quantity
+function getDiscountPercent(service, qty) {
+    const rules = service === 'comments' ? discountRules.comments : discountRules.other;
+    let percent = 0;
+    if (rules && rules.length) {
+        for (let i = rules.length - 1; i >= 0; i--) {
+            if (qty >= rules[i].minQty) {
+                percent = rules[i].percent;
+                break;
+            }
+        }
+    }
+    return percent;
+}
+
+// Update quantity options for a platform
+function updateQuantityOptions(platform) {
+    const serviceSelect = document.getElementById(`${platform}Service`);
+    const quantitySelect = document.getElementById(`${platform}Quantity`);
+    const selectedService = serviceSelect.value;
+
+    if (!basePrices[baseCurrency] ||
+        !basePrices[baseCurrency][platform] ||
+        !basePrices[baseCurrency][platform][selectedService]) {
+        console.error(`Price not found for ${platform} ${selectedService} in ${baseCurrency}`);
+        return;
+    }
+
+    const basePrice = basePrices[baseCurrency][platform][selectedService];
+
+    let quantities;
+    if (selectedService === "comments") {
+        quantities = discountRules.comments.map(r => r.minQty);
+    } else {
+        quantities = discountRules.other.map(r => r.minQty);
+    }
+
+    quantitySelect.innerHTML = '';
+
+    quantities.forEach(qty => {
+        let totalBasePrice = (basePrice * qty) / 1000;
+        const discountPercent = getDiscountPercent(selectedService, qty);
+        if (discountPercent > 0) totalBasePrice = totalBasePrice * (1 - discountPercent / 100);
+
+        const displayPrice = convertPrice(totalBasePrice, baseCurrency, displayCurrency);
+        const formattedPrice = formatPrice(displayPrice, displayCurrency);
+
+        const option = document.createElement('option');
+        option.value = qty;
+        option.textContent = discountPercent > 0
+        //  (${discountPercent}% off add after ${formattedPrice} if want to show discount)
+            ? `${qty.toLocaleString()} ${getServiceLabel(platform, selectedService)} – ${formattedPrice}`
+            : `${qty.toLocaleString()} ${getServiceLabel(platform, selectedService)} – ${formattedPrice}`;
+        quantitySelect.appendChild(option);
+    });
+}
+
+// Placeholder for service labels
+function getServiceLabel(platform, service) {
+    // Customize if you want full names
+    return service;
+}
+
+// Dummy setupEventListeners placeholder
+function setupEventListeners() {
+    const platforms = ['instagram', 'facebook', 'youtube', 'tiktok'];
+    platforms.forEach(platform => {
+        const serviceSelect = document.getElementById(`${platform}Service`);
+        serviceSelect.addEventListener('change', () => updateQuantityOptions(platform));
+    });
+}
+
+// Call init
+init();
+
+
+
+        // Get proper service label
+        function getServiceLabel(platform, service) {
+            const labels = {
+                instagram: {
+                    followers: 'Followers',
+                    likes: 'Likes',
+                    views: 'Views',
+                    comments: 'Comments'
+                },
+                facebook: {
+                    followers: 'Followers',
+                    postlikes: 'Post Likes',
+                    followerslikes: 'Followers + Likes',
+                    reactions: 'Reactions',
+                    views: 'Views',
+                    comments: 'Comments'
+                },
+                youtube: {
+                    subscribers: 'Subscribers',
+                    likes: 'Likes',
+                    views: 'Views',
+                    comments: 'Comments'
+                },
+                tiktok: {
+                    followers: 'Followers',
+                    likes: 'Likes',
+                    views: 'Views',
+                    comments: 'Comments'
+                }
+            };
+            
+            return labels[platform][service] || service;
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            const currencySelect = document.getElementById('currencySelect');
+            currencySelect.addEventListener('change', function() {
+                displayCurrency = this.value;
+                initializeQuantityOptions();
+            });
+
+            // Close modal on ESC key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+
+            // Close modal on overlay click
+            document.getElementById('modalOverlay').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
+        }
+
+        // Open order modal
+        function openModal(platform) {
+            const serviceSelect = document.getElementById(`${platform}Service`);
+            const quantitySelect = document.getElementById(`${platform}Quantity`);
+            const urlInput = document.getElementById(`${platform}Url`);
+            
+            const service = serviceSelect.value;
+            const quantity = parseInt(quantitySelect.value);
+            const url = urlInput.value.trim();
+            
+            // Validation
+            if (!url) {
+                showToast('Please enter a valid URL', 'error');
+                return;
+            }
+            
+            if (!validateUrl(platform, service, url)) {
+                showToast('Please enter a valid URL for the selected service', 'error');
+                return;
+            }
+            
+            // Calculate prices
+            const basePrice = basePrices[baseCurrency][platform][service];
+            const totalBasePrice = (basePrice * quantity) / 1000;
+            const displayPrice = convertPrice(totalBasePrice, baseCurrency, displayCurrency);
+            
+            // Populate order summary
+            populateOrderSummary(platform, service, quantity, url, totalBasePrice, displayPrice);
+            
+            // Populate payment section
+            populatePaymentSection();
+            
+            // Show modal
+            document.getElementById('modalOverlay').style.display = 'flex';
+        }
+
+        // Validate URL based on platform and service
+        function validateUrl(platform, service, url) {
+            const urlPatterns = {
+                instagram: /^https?:\/\/(www\.)?(instagram\.com|instagr\.am)\/.+/i,
+                facebook: /^https?:\/\/(www\.)?facebook\.com\/.+/i,
+                youtube: /^https?:\/\/(www\.)?(youtube\.com|youtu\.be)\/.+/i,
+                tiktok: /^https?:\/\/(www\.)?tiktok\.com\/.+/i
+            };
+            
+            return urlPatterns[platform] && urlPatterns[platform].test(url);
+        }
+
+        // Populate order summary
+        function populateOrderSummary(platform, service, quantity, url, basePrice, displayPrice) {
+            const orderSummary = document.getElementById('orderSummary');
+            
+            const platformName = platform.charAt(0).toUpperCase() + platform.slice(1);
+            const serviceName = getServiceLabel(platform, service);
+            
+            let totalDisplay = formatPrice(displayPrice, displayCurrency);
+            if (displayCurrency !== baseCurrency) {
+                // totalDisplay += ` (base: ${formatPrice(basePrice, baseCurrency)})`;
+            }
+            
+            orderSummary.innerHTML = `
+                <h3>Order Details</h3>
+                <div class="order-item">
+                    <span><strong>Platform:</strong></span>
+                    <span>${platformName}</span>
+                </div>
+                <div class="order-item">
+                    <span><strong>Service:</strong></span>
+                    <span>${serviceName}</span>
+                </div>
+                <div class="order-item">
+                    <span><strong>Quantity:</strong></span>
+                    <span>${quantity.toLocaleString()}</span>
+                </div>
+               <div class="order-item">
+  <span><strong>URL Link:</strong></span>
+  <a href="${url.startsWith('http') ? url : 'https://' + url}" 
+     target="_blank" 
+     style="word-break: break-all; color: blue; text-decoration: underline;">
+     ${url}
+  </a>
+</div>
+
+                <div class="order-item">
+                    <span><strong>Total:</strong></span>
+                    <span>${totalDisplay}</span>
+                </div>
+            `;
+        }
+
+      // Populate payment section
+async function populatePaymentSection() {
+    const paymentSection = document.getElementById('paymentSection');
+
+    try {
+        // JSON file fetch کرو
+        const response = await fetch('payments.json');
+        const payments = await response.json();
+
+        // baseCurrency آپ کے code میں پہلے سے define ہے
+        const payment = payments[baseCurrency];
+        if (!payment) {
+            paymentSection.innerHTML = "<p>No payment method available.</p>";
+            return;
+        }
+
+        let paymentHTML = '';
+
+        switch (baseCurrency) {
+            case 'USD':
+            case 'GBP':
+            case 'EUR':
+                paymentHTML = `
+                    <div class="payment-method">
+                        <h4>💳 ${payment.method} Payment</h4>
+                        <p>${payment.description}</p>
+                    </div>
+                    
+                    <div class="acount-title">
+                        <label class="bold-text">Name:</label>
+                        <span class="bold-text">${payment.name}</span>
+                    </div>
+                    <div class="copyable-field">
+                        <label class="bold-text">Email:</label>
+                        <span class="Email">${payment.email}</span>
+                        <button class="copy-btn" onclick="copyToClipboard('${payment.email}', this)">Copy</button>
+                    </div>
+                `;
+                break;
+
+            case 'PKR':
+                paymentHTML = `
+                    <div class="payment-method">
+                        <h4>${payment.method}</h4>
+                        <p>${payment.description}</p>
+                    </div>
+                    
+                    <div class="acount-title">
+                        <label class="bold-text">Name:</label>
+                        <span class="bold-text">${payment.name}</span>
+                    </div>
+                    <div class="copyable-field">
+                        <label class="bold-text">Number:</label>
+                        <span class="bold-text">${payment.number}</span>
+                        <button class="copy-btn" onclick="copyToClipboard('${payment.number}', this)">Copy</button>
+                    </div>
+                `;
+                break;
+
+            case 'INR':
+                paymentHTML = `
+                    <div class="payment-method">
+                        <h4>${payment.method}</h4>
+                        <p>${payment.description}</p>
+                        <div class="acount-title">
+                            <label class="bold-text">Name:</label>
+                            <span class="bold-text">${payment.name}</span>
+                        </div>
+                        <div style="margin: 1rem 0; padding: 0.2rem;  border-radius: 10px; text-align: center;">
+                            <p><strong>Scan and pay</strong></p>
+                            <div style="width: 200px; height: 200px; margin: 0.3rem auto; border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center;">
+                                <img src="${payment.qrCode}" alt="UPI QR Code" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
+                            </div>
+                        </div>
+                    </div>
+                `;
+                break;
+        }
+
+        paymentHTML += `
+            <p class="payment-text">
+                If you want another payment method, contact on 
+                <a href="https://wa.me/923266438812?text=Hello%20I%20want%20to%20know%20about%20another%20payment%20method"
+                   target="_blank"
+                   class="whatsapp-btn">
+                   📱 WhatsApp
+                </a>
+            </p>
+        `;
+
+        paymentSection.innerHTML = paymentHTML;
+
+    } catch (err) {
+        paymentSection.innerHTML = "<p>Error loading payment methods.</p>";
+        console.error("Payment JSON load error:", err);
+    }
+}
+
+
+        // Copy to clipboard function
+        function copyToClipboard(text, button) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('Copied!', 'success');
+                button.textContent = 'Copied!';
+                setTimeout(() => {
+                    button.textContent = 'Copy';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                showToast('Failed to copy', 'error');
+            });
+        }
+
+        // // Open WhatsApp
+        // function openWhatsApp() {
+        //     const message = encodeURIComponent('Hi, I want to place an order for social media services. Can you help me?');
+        //     const whatsappUrl = `https://wa.me/1234567890?text=${message}`;
+        //     window.open(whatsappUrl, '_blank');
+        // }
+
+        // Close modal
+        function closeModal() {
+            document.getElementById('modalOverlay').style.display = 'none';
+            clearModalMessages();
+        }
+
+        // Clear modal messages
+        function clearModalMessages() {
+            document.getElementById('modalMessages').innerHTML = '';
+        }
+
+        // Submit order
+        function submitOrder() {
+            const paymentFile = document.getElementById('paymentScreenshot').files[0];
+            const comments = document.getElementById('additionalComments').value.trim();
+            
+            // Get order details from the summary
+            const orderSummary = document.getElementById('orderSummary');
+            const orderItems = orderSummary.querySelectorAll('.order-item');
+            
+            let orderData = {};
+            orderItems.forEach(item => {
+                const spans = item.querySelectorAll('span');
+                if (spans.length === 2) {
+                    const key = spans[0].textContent.replace(':', '').replace(/\*\*/g, '').toLowerCase();
+                    const value = spans[1].textContent;
+                    orderData[key] = value;
+                }
+            });
+            
+            // Validation
+            if (!orderData.platform || !orderData.service || !orderData.quantity) {
+                showModalMessage('Please complete all required fields.', 'error');
+                return;
+            }
+            
+     
+        }
+
+        function previewImage(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const preview = document.getElementById('preview');
+            preview.src = e.target.result;
+            preview.style.display = 'block';
+        }
+        reader.readAsDataURL(file);
+    }
+}
+      
+
+        // Show toast notification
+        function showToast(message, type) {
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            
+            if (type === 'error') {
+                toast.style.background = '#dc3545';
+            }
+            
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                document.body.removeChild(toast);
+            }, 3000);
+        }
+
+
+        document.getElementById("whatsappBtn").addEventListener("click", function() {
+    // WhatsApp link with pre-filled text
+    let phone = "923266438812"; // 92 = Pakistan country code
+    let message = "Hello, I would like to discuss a custom order for social media services. Please guide me.";
+    let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+
+    // Redirect to WhatsApp
+    window.open(url, "_blank");
+});
+
+
+
+        // Initialize the application when the page loads
+        window.addEventListener('DOMContentLoaded', init);
+
+     function submitOrder() {
+    const orderSummary = document.getElementById('orderSummary');
+
+    // Get details from orderSummary
+    const platformName = orderSummary.querySelector('.order-item:nth-child(2) span:last-child').innerText;
+    const serviceName  = orderSummary.querySelector('.order-item:nth-child(3) span:last-child').innerText;
+    const quantity     = orderSummary.querySelector('.order-item:nth-child(4) span:last-child').innerText;
+    const url          = orderSummary.querySelector('.order-item:nth-child(5) a').href;
+    const totalDisplay = orderSummary.querySelector('.order-item:nth-child(6) span:last-child').innerText;
+
+        // Get user comments
+    const comments = document.getElementById('additionalComments').value || "";
+
+    // WhatsApp number
+    const phone = "923266438812";
+
+    // Format message in professional style
+    const message = `
+
+*Platform:* ${platformName}
+*Service:* ${serviceName}
+*Quantity:* ${quantity}
+*Link:* ${url}
+*Total:* ${totalDisplay}
+*Screenshot:* Uploaded
+*Additional Comments:* ${comments}
+
+*Note:*
+I didn't receive your payment screenshot yet. Please send your payment screenshot again.
+Once your payment is confirmed, your order will be processed instantly.
+
+ Thank you for choosing our services!
+    `;
+
+    // Encode for WhatsApp
+    const encodedMessage = encodeURIComponent(message);
+
+    // Redirect to WhatsApp chat
+    window.open(`https://wa.me/${phone}?text=${encodedMessage}`, "_blank");
+
+
+}
+
+
+
+
+function updatePlaceholder(platform) {
+    let serviceSelect, urlInput;
+
+    switch(platform) {
+        case "instagram":
+            serviceSelect = document.getElementById("instagramService");
+            urlInput = document.getElementById("instagramUrl");
+            break;
+        case "facebook":
+            serviceSelect = document.getElementById("facebookService");
+            urlInput = document.getElementById("facebookUrl");
+            break;
+        case "youtube":
+            serviceSelect = document.getElementById("youtubeService");
+            urlInput = document.getElementById("youtubeUrl");
+            break;
+        case "tiktok":
+            serviceSelect = document.getElementById("tiktokService");
+            urlInput = document.getElementById("tiktokUrl");
+            break;
+        default:
+            return;
+    }
+
+    const selectedService = serviceSelect.value;
+
+    // Update placeholder based on selected service
+    switch(platform) {
+        case "instagram":
+            urlInput.placeholder = (selectedService === "followers") 
+                ? "https://instagram.com/your-profile-link" 
+                : "https://instagram.com/p/your-post";
+            break;
+        case "facebook":
+             urlInput.placeholder = (selectedService === "followers" || selectedService === "followerslikes") 
+                ? "https://facebook.com/page/profile-link" 
+                : "https://facebook.com/p/your-post-link";
+            break;
+        case "youtube":
+            urlInput.placeholder = (selectedService === "subscribers") 
+                ? "https://youtube.com/your-channel-link" 
+                : "https://youtube.com/watch?v=your-video";
+            break;
+        case "tiktok":
+            urlInput.placeholder = (selectedService === "followers") 
+                ? "https://tiktok.com/@your-username" 
+                : "https://tiktok.com/your-video-link";
+            break;
+    }
+}
+
+// Attach onchange event listeners
+["instagram", "facebook", "youtube", "tiktok"].forEach(platform => {
+    const selectEl = document.getElementById(`${platform}Service`);
+    if(selectEl) {
+        selectEl.addEventListener("change", () => updatePlaceholder(platform));
+    }
+});
+
+// Optional: initialize placeholders on page load
+["instagram", "facebook", "youtube", "tiktok"].forEach(platform => updatePlaceholder(platform));
+
+
+  window.addEventListener("load", function() {
+      // Show loader for 4 seconds, then hide it
+      setTimeout(() => {
+        document.querySelector(".loader-wrapper").classList.add("hidden");
+        document.querySelector(".content").style.display = "block";
+        document.body.style.overflow = "auto"; // re-enable scrolling
+      }, 2500);
+    });
+
+
+    app.get('/admin', (req, res) => {
+    res.render('admin'); // 'admin.ejs' file views folder me
+});
+
+    </script>
+</body>
+</html>

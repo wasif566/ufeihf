@@ -1,0 +1,32 @@
+{
+  "USD": {
+    "method": "PayPal",
+    "description": "Make payment with PayPal. After payment, upload screenshot below. We will confirm and start your order instantly.",
+    "name": "Imran",
+    "email": "imrangee73@hotmail.co.uk"
+  },
+  "GBP": {
+    "method": "PayPal",
+    "description": "Make payment with PayPal. After payment, upload screenshot below. We will confirm and start your order instantly.",
+    "name": "Imran",
+    "email": "imrangee73@hotmail.co.uk"
+  },
+  "EUR": {
+    "method": "PayPal",
+    "description": "Make payment with PayPal. After payment, upload screenshot below. We will confirm and start your order instantly.",
+    "name": "Imran",
+    "email": "imrangee73@hotmail.co.uk"
+  },
+  "PKR": {
+    "method": "EasyPaisa/ JazzCash",
+    "description": "Make payment with EasyPaisa OR JazzCash. After payment, upload screenshot below. We will confirm and start your order instantly.",
+    "name": "Muhammad Wasif",
+    "number": "03266438812"
+  },
+  "INR": {
+    "method": "Paytm/ PhonePe/ UPI/ GPay",
+     "description": "Make payment with Paytm/ PhonePe/ UPI/ GPay. After payment, upload screenshot below. We will confirm and start your order instantly.",
+    "name": "Muhammad Wasif",
+    "qrCode": "Screenshot (36).png"
+  }
+}
